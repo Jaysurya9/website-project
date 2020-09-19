@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear_fix  {max-width:100%;clear:both;margin:auto;}
+li          {list-style:none;}
+a           {text-decoration:none;} 
+body     {font-family: 'Roboto', sans-serif;}
+.site_container   {max-width:1170px;margin:auto;}
+img               {max-width:100%;height:auto;}  
+
+
+
+.logo    {float:left;width: 55%;}
+.menu    {float:right;width: 45%;}
+.menu ul li {float:left;}
+.menu ul li a {font-size:14px;font-weight:400;color:#2d3133;    padding-right: 50px;
+text-transform:uppercase;}
+
+.banner   {position:relative;}
+.btn      {position:absolute;top: 75px;width:581px;}
+.btn h3   {font-size:40px;font-weight:300;}
+
+.left   {float:left;width:35%;}
+.right  {float:right;width:60%;margin-left:5%;}
+
+.right h2  {font-size:36px;font-weight:bold;color:#306998;text-transform:uppercase;}
+.right p  {font-size:16px;font-weight:300;color:#2d3133;line-height: 33px;}
+
+.list1  {float:left;width:31.3%;text-align:center;margin-right:2%;}
+.list1 h5  {font-size:24px;font-weight:400;color:#2d3133;text-transform:uppercase;}
+.list1 p  {font-size:12px;font-weight:300;color:#2d3133;line-height: 24px;}
+
+.service   {background:url(images/back_09.png);background-repeat:no-repeat;background-size:cover;color:#fff;text-align:center;padding:20px;
+}
+.service h4 {font-size:36px;font-weight:bold;text-transform:uppercase;margin-top:0px;}
+.service p  {font-size:16px;font-weight:300;line-height: 24px;}
