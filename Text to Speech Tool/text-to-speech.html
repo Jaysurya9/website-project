@@ -1,0 +1,220 @@
+﻿
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+<base href="https://speechtyping.com/text-to-speech" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Text to Speech - text to speech online, text reader, convert text into speech, listen text, text to speech converter online, online TTS, Text to Speech software, Convert Text into Speech" />
+	<meta name="description" content="Text to Speech - text to speech online, text reader, convert text into speech, listen text, text to speech converter online." />
+	
+	<title>Text to Speech | Text Reader Online | Read Text from Screen</title>
+	<link href="/templates/ajt005_j30/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/plugins/system/jce/css/content.css?ee4dbbf0499bfc37b8c8d0cadd7671f9" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+function do_nothing() { return; }
+	</script>
+
+<link href="https://fonts.googleapis.com/css?family=Oswald, &display=swap" rel='stylesheet' type='text/css'>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<link rel="stylesheet" href="/templates/ajt005_j30/css/styles.css" type="text/css" />
+<script type="text/javascript" src="/templates/ajt005_j30/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('#navr').prepend('<div id="menu-icon">Menu</div>');
+	$("#menu-icon").on("click", function(){
+		$("#nav").slideToggle();
+		$("#search").slideToggle();
+		$(this).toggleClass("active");
+	});
+});
+</script>
+
+
+<link rel="stylesheet" href="/templates/ajt005_j30/bootstrap/css/bootstrap.min.css" type="text/css" />
+</head>
+<body class="background">
+	<div id="main"> 
+	<div id="wrapper-w">
+    	<div id="wrapper">
+        	<div id="comp-w">        
+         		<div class="row-fluid">
+                	<div id="comp" class="span9">
+                     	<div id="comp-i">	                                                         	<div id="system-message-container">
+						   </div>
+                                <div class="item-page">
+
+<h1>Text to Speech</h1>
+<!-- START: Modules Anywhere --><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/default.css">
+	<style>.btn2{ height:auto !important; }</style>
+  </head>
+  <body onload="loadVoices()" style="background-color:#dbd3d3;"> 
+<script type="text/javascript" src="/header.html"></script>
+<table class="tbl1">
+<tr><td colspan="3" align="center">
+<div>
+	<label for="selectTimbre">Sound:</label>
+	<select id="selectTimbre" style="width:360px;"></select>
+</div>
+	<input id="inputPitch" type="number" style="display:none;" value="1"></input>
+	<input id="inputSpeed" type="number" style="display:none;" value="1"></input>
+</td></tr>
+<tr><td colspan="3">
+	<textarea class="input_box" maxlength="" placeholder="Copy Your Text Here..." id="inputThingsToSay" onkeyup="word_counting();"></textarea>
+</td></tr>
+<tr><td colspan="3" align="center">
+<label class="btn2">Total Words: <span id="wordCount">0</span></label>
+  <label class="btn2">Total Characters: <span id="totalChars">0</span></label>
+  <label class="btn2">Characters (Excluding Spaces): <span id="charCountNoSpace">0</span></label></td>
+</tr>
+<tr><td colspan="3" align="center">
+<div>
+	<button id="buttonSay" style="border:2px solid #d0d3eb;" class="btn1" onclick="buttonSay_Clicked()"><table><tr><td style="padding-bottom:6px;">Speak</td><td><img src="https://speechtyping.com/images/img.png"></img></td></tr></table></button>
+</div>
+</td></tr></table>
+
+<script type="text/javascript">
+
+function word_counting()
+{
+ var value2= document.getElementById('inputThingsToSay').value;
+ //alert(value2);
+ if(value2!='')
+    {
+		var regex = /\s+/gi;
+		var wordCount = value2.trim().replace(regex, ' ').split(' ').length;
+		var totalChars = value2.length;
+		//var charCountNoSpace = totalChars - wordCount;
+		var charCountNoSpace = value2.replace(regex, '').length;
+		document.getElementById('wordCount').innerHTML= wordCount;
+		document.getElementById('totalChars').innerHTML=totalChars;
+		document.getElementById('charCountNoSpace').innerHTML=charCountNoSpace;
+    }    
+}
+
+function loadVoices()
+{
+	var synthesizer = window.speechSynthesis;
+	synthesizer.onvoiceschanged = loadVoices_VoicesLoaded;
+	synthesizer.getVoices();
+}
+function loadVoices_VoicesLoaded()
+{
+	var synthesizer = window.speechSynthesis;
+	var systemVoices = synthesizer.getVoices();
+	systemVoices.addLookups("name");		
+	Voice.systemVoiceLookup = systemVoices;
+
+	var selectTimbre = document.getElementById("selectTimbre");
+	for(var i = 0; i < systemVoices.length; i++)
+	{
+		var systemVoice = systemVoices[i];
+		var optionTimbre = document.createElement("option");
+		optionTimbre.text = systemVoice.name;
+		optionTimbre.systemVoice = systemVoice;
+		//alert(systemVoice.name);
+		var sound_voice = systemVoice.name;
+		var array = sound_voice.split(" ");
+		if(array[0]=='Microsoft')
+		{
+		  selectTimbre.appendChild(optionTimbre);
+		}
+	}
+}
+
+function buttonSay_Clicked()
+{
+	var inputThingsToSay = document.getElementById
+	(
+		"inputThingsToSay"
+	);
+	var selectTimbre = document.getElementById("selectTimbre");
+	var inputPitch = document.getElementById("inputPitch");
+	var inputSpeed = document.getElementById("inputSpeed");
+
+    //var selectTimbre = document.getElementById("selectTimbre");
+	// var timbreName = 'Google US English'; 
+	// var timbreName = 'Google हिन्दी';  //  50 words (243 characters with space)
+	var timbreName = selectTimbre.selectedOptions[0].text;
+	var pitch = parseFloat(inputPitch.value);
+	var speed = parseFloat(inputSpeed.value);
+	var thingsToSay = inputThingsToSay.value;
+    //alert(thingsToSay);
+	var value = thingsToSay;
+	var voice = new Voice
+	(
+		"Default", 
+		timbreName, 
+		pitch, 
+		speed
+	);	
+	voice.say(thingsToSay);	
+}
+
+// classes
+
+function ArrayHelper()
+{
+	// extension class
+}
+{
+	Array.prototype.addLookups = function(keyName)
+	{
+		for (var i = 0; i < this.length; i++)
+		{
+			var item = this[i];
+			var keyValue = item[keyName];
+			this[keyValue] = item;
+		}
+	}
+}
+
+function Voice(name, timbreName, pitch, speed)
+{
+	this.name = name;
+	this.timbreName = timbreName;
+	this.pitch = (pitch == null ? 1 : pitch);
+	this.speed = (speed == null ? 1 : speed);
+
+	this.systemUtterance = new SpeechSynthesisUtterance();
+	this.systemUtterance.onend = this.say_Ended.bind(this);
+}
+{
+	// instance methods
+	Voice.prototype.say = function(thingToSay, callback, contextForCallback)
+	{
+		this.callback = callback;
+		this.contextForCallback = contextForCallback;
+
+		this.isSpeaking = true;
+
+		var voices = Voice.systemVoiceLookup;
+		
+		var utterance = this.systemUtterance;
+		utterance.voice = voices[this.timbreName];
+		utterance.text = thingToSay;
+		utterance.pitch = this.pitch;
+		utterance.rate = this.speed;
+
+		window.speechSynthesis.speak(utterance);
+	}
+
+	Voice.prototype.say_Ended = function()
+	{
+		this.isSpeaking = false;
+		if (this.callback != null)
+		{
+			this.callback.call(this.contextForCallback);
+		}
+	}
+}
+</script>
+
+</body>
+</html>
+    <!-- END: Modules Anywhere -->
+
