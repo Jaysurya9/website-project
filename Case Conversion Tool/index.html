@@ -1,0 +1,127 @@
+﻿
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+
+<body bgColor='#b7d7e8'>
+<br>
+<div>
+ 
+<div class="maincontainer">
+
+<div id="contentwrapper">
+<div id="middlecolumn">
+<form class="convertcase">
+<center><textarea id="stringbox" style="border:2px solid #2a6592;max-width:700px;width:100%;font-size:18px;" rows="8">
+This tool will convert letter case of your text just paste your text here and click on buttons below.
+</textarea>
+<br />
+<b style="font-family:sans-serif;font-size:18px;">Change Case- &nbsp;</b><button onClick="return convertstring(stringbox, 'sentencecase')" style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" title="Make everything lowercase except the first character and 'I'">Sentence</button>
+<button onClick="return convertstring(stringbox, 'titlecase')" style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" title="Capitalize the first character of each word, omitting common stop words like 'and', 'at' etc">Title</button>
+<button onClick="return convertstring(stringbox, 'capitalcase')" style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" title="Capitalize the first character of each word">Capital</button> 
+<button style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" onClick="return convertstring(stringbox, 'lowercase')"Lower Case everything inside the string.">Lower</button> 
+<button onClick="return convertstring(stringbox, 'uppercase')" style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" title="Upper Case everything inside the string.">Upper</button>
+<button style="background-color:#2a6592;color:white;font-family:sans-serif;padding:6px 8px 6px 8px;" onClick="return fieldtoclipboard.copyfield(event, stringbox)">Copy</button>
+
+</form></center>
+<br>
+<center>
+<table border="1px;" cellpadding="7" style="font-size:14px;font-family:sans-serif;border-collapse:collapse;">
+<tr >
+	<td><b>Word Count</td></b>
+	<td><span id="wordcount"></span>
+	</td>
+</tr>
+<tr>
+	<td>
+	<b>Character Count</b> </td>
+	<td><span id="charcount"></span></td>
+</tr>
+</table>
+</center>
+<script>
+
+var stringbox = document.getElementById('stringbox')
+var wordcountspan = document.getElementById('wordcount')
+var charcountspan = document.getElementById('charcount')
+
+
+function convertstring(textarea, action){
+	if (action == 'sentencecase'){
+		textarea.value = sentenceCase(textarea.value)
+	}
+	else if (action == 'titlecase'){
+		textarea.value = toTitleCase(textarea.value)
+	}
+	else if (action == 'capitalcase'){
+		textarea.value = CapitalCase(textarea.value)
+	}
+	else if (action == 'lowercase'){
+		textarea.value = lowerCase(textarea.value)
+	}
+	else if (action == 'uppercase'){
+		textarea.value = upperCase(textarea.value)
+	}
+	return false
+}
+
+function sentenceCase(str){
+	var str = str.toLowerCase().replace(/\si\s/g, ' I ');
+	str = str.charAt(0).toUpperCase() + str.slice(1);
+	return str
+}
+
+function toTitleCase(str){
+  var smallWords = /^(a|an|and|as|at|but|by|en|for|if|in|nor|of|on|or|per|the|to|vs?\.?|via)$/i;
+	var str = str.toLowerCase()
+  return str.replace(/[A-Za-z0-9\u00C0-\u00FF]+[^\s-]*/g, function(match, index, title){
+    if (index > 0 && index + match.length !== title.length &&
+      match.search(smallWords) > -1 && title.charAt(index - 2) !== ":" &&
+      (title.charAt(index + match.length) !== '-' || title.charAt(index - 1) === '-') &&
+      title.charAt(index - 1).search(/[^\s-]/) < 0) {
+      return match.toLowerCase();
+    }
+
+    if (match.substr(1).search(/[A-Z]|\../) > -1) {
+      return match;
+    }
+
+    return match.charAt(0).toUpperCase() + match.substr(1);
+  });
+};
+
+function CapitalCase(str){
+  return str.toLowerCase().split(' ').map(function(word) {
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+  }).join(' ');
+}
+
+function lowerCase(str){
+  return str.toLowerCase();
+}
+
+function upperCase(str){
+  return str.toUpperCase();
+}
+
+function wordandcharcount(){
+	wordcountspan.innerHTML = stringbox.value.split(' ').length
+	charcountspan.innerHTML = stringbox.value.length
+}
+
+
+stringbox.addEventListener('input', function(){
+	wordandcharcount()
+}, false)
+
+wordandcharcount()
+
+</script>
+
+<script src="fieldtoclipboard.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>
