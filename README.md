@@ -40,3 +40,5 @@ Login to Google Search Console and Add Website to domain or url.
 
 Step 13: Adding  Sitemap 
 Generate  Site Map online. Enable Custom Robot and add sitemap code to Custom Robot in Blogger settings. 
+
+Step 14: Publish Website
