@@ -1,5 +1,8 @@
+<h2>Blogger Website Creation</h2>
+
 Step 1: Choose a Hosting Platform
 Select Hosting platform – [“Wordpress” | “Blogger” | “Google Cloud” ]
+Step Below are for Blogger
 
 Step 2: Choose a Domain Name
 Purchase a Domain (.com, .in, .net) and connect domain to hosting platform
