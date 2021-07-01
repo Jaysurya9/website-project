@@ -54,17 +54,21 @@ Go to Setting and add basic details of the Blog
     <li>Analysis of Selecting Domain name keyword</li>
 </ul>
 
-      Your Domain Name:
+REGISTER Domain (For Example: NameCheap | GoDaddy | Freenom)
+
+Your Choice: Freenom
+
+Your Domain Name:
       
  and then <br>
  connect domain to hosting platform --> Redirect Blog to Website Domain Name
  
 <hr> 
 
-<b>Step 4:</b> Adding Records to Domain Settings in DNS Management <br>
-(For Example: NameCheap | GoDaddy ) 
+<b>Step 4:</b> Configure Domain Settings in DNS Management <br> 
 
-Add CNAME Record 
+Adding Records to Domain Settings in DNS Management<br>
+Add the following two CNAMEs 
 
 Add a 1st CNAME Record
 
