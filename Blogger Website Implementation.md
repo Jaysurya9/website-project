@@ -38,10 +38,10 @@ Go to Setting and add basic details of the Blog
     <li>Add Description</li>
     <li>Select Blog Language</li>
     <img src="Images/Blog Basic Settings.PNG" alt="Blog Basic Settings">
-    <li>Add Google Analytics property ID</li>   
+    <li>Add Google Analytics property ID <br>Property ID Startswith/looks like <b>UA-12345678-1</b></li>   
     <li>Add Favicon</li>
     <img src="Images/Congifure Favicon.PNG" alt="Congifure Favicon">
-    <li>Enable Privacy - Visible to Search Engines</li>
+    <li>Enable Privacy - Visible to Search Engines to find on Website/Blog</li>
     <img src="Images/Enabling Privacy - Visible to Search engines.PNG" alt="Enabling Privacy - Visible to Search engines">
 </ul>
  
@@ -175,20 +175,8 @@ Enable website html concent add the below script content at the beginning
     </head>
 
 <hr>
-
-<b>Step 7:</b> Create Logo and Change Logo
-
-<hr>
-
-<b>Step 8:</b> Create Pages Add Pages like Contact, About, Support, Feedback, SiteMap,…etc.
-
-<hr>
-
-<b>Step 9:</b> Adding Navigation links Add Page Navigation Links to Top Header Menu and Footer Menu
-
-<hr>
-
-<b>Step 10:</b> Create a Post 
+    
+<b>Step 7:</b> Create a Post 
 
 <ul>
     <li>Add a post title - try to add small titles</li>
@@ -243,10 +231,18 @@ Enable post html concent add the below script content at the beginning
         
     <!-- End Of SEO -->
     </head>
+ 
+<hr>   
+
+<b>Step 8:</b> Create Logo and Change Logo
 
 <hr>
 
-<b>Step 11:</b> Publish Website
+<b>Step 9:</b> Create Pages Add Pages like Contact, About, Support, Feedback, SiteMap,…etc.
+
+<hr>
+
+<b>Step 10:</b> Adding Navigation links Add Page Navigation Links to Top Header Menu and Footer Menu10
 
 <hr>
 
@@ -254,7 +250,30 @@ Enable post html concent add the below script content at the beginning
 
 Step : Track/Monitor Website
 
-Create a Google Analytics and add google analatics to Blogger Theame HTML/XML Code
+Create a Google Analytics @ https://analytics.google.com/ 
+    
+Set up the Analytics global site tag
+Refer: https://support.google.com/analytics/answer/1008080?hl=en#zippy=%2Cin-this-article
+    
+Set up Analytics for a website (Universal Analytics)
+Refer: https://support.google.com/analytics/answer/10269537?ref_topic=1009620
+    
+Add Global Site Tag (gtag.js) tracking code
+    
+Copy and paste tracking code code as the first item into the <HEAD> of every web page that we/you want to track. <br>
+If you already have a Global Site Tag on page, simply add the config line from the snippet below to your existing Global Site Tag.
+    
+Tracking Code looks like this and property tag has to be added
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12345678-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-12345678-1');
+    </script>
 
 <hr>
 
