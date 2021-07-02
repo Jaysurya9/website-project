@@ -6,12 +6,11 @@
 
 Select Hosting platform – [“Azure" | "Wordpress” | “Blogspot/Blogger” | “Google Cloud” | "GitHub Pages"] 
 
-    Your Choice: Blogspot/Blogger
-    
-Step Below are for Blogspot/Blogger
+Choosing a Hosting Platform
+
+Choice -> Blogspot/Blogger
 
 Reasons for Choosing Blogspot/Blogger
-
 <ul>
     <li>Hosting is Free</li>
     <li>Free Domain Linkup</li>
@@ -19,6 +18,8 @@ Reasons for Choosing Blogspot/Blogger
     <li>Easy Navigation and Creations using UI</li>
     <li>Easy Integrations</li>
  </ul>
+ 
+Step Below are for Blogspot/Blogger
 
 <hr>
 
@@ -26,10 +27,10 @@ Reasons for Choosing Blogspot/Blogger
 
 <a href="https://Blogger.com" alt="Create a Blogspot" target="_blank">Click Here to create a Blog</a>
 
-Add Blog Title and Name
+Choosing a Blog Name: 
+
+Add Blog Title and Name and get started
         
-      Your Blog Name: 
-      
 Go to Setting and add basic details of the Blog
 
 <ul>
@@ -49,23 +50,25 @@ Go to Setting and add basic details of the Blog
 <b>Step 3:</b> Choose a Domain Name 
 
 <ul>
-    <li>Purchase a Domain (.com, .in, .net) </li>
-    <li>Search Pricing and Costing of Domain</li>
-    <li>Analysis of Selecting Domain name keyword</li>
+    <li>Search Pricing and Costing of a Domain</li>
+    <li>Analysis of Selecting Domain name keywords - that which users use frequently</li>
+    <li>Purchase a Domain (.com, .in, .net)</li>    
 </ul>
 
 REGISTER Domain (For Example: NameCheap | GoDaddy | Freenom)
 
-Your Choice: Freenom
+Your Choice -> Freenom
 
-Your Domain Name:
+Choosing a Domain Name:
       
- and then <br>
- connect domain to hosting platform --> Redirect Blog to Website Domain Name
- 
 <hr> 
 
 <b>Step 4:</b> Configure Domain Settings in DNS Management <br> 
+
+connect domain to hosting platform<br>
+Blogger Settings<br>
+--> Custom Domain <br>
+--> add Custom Domain For Example: <b>www.<domain_name>.com</b>  <br>
 
 Adding Records to Domain Settings in DNS Management<br>
 Add the following two CNAMEs 
@@ -89,7 +92,6 @@ Add a 2nd CNAME Record
 
 <img src="Images/Add CNAME Record.PNG" alt="Add CNAME Record">
     
-
 Add A Record  ---> Reference: To Get A Record List -> https://www.blogger.com/go/customdomain
 
     Type = A	
@@ -111,6 +113,8 @@ Add these 4 A-records that point to Google IPs:
 **Reference Image**
 
 <img src="Images/Add these 4 A-records that point to Google IPs.PNG" alt="Add these 4 A-records that point to Google IPs">
+    
+--> Redirect Blog to Website Domain Name <b>www.<domain_name>.com</b>  
 
 <hr>
 
