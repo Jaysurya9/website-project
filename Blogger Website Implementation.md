@@ -248,7 +248,7 @@ Enable post html concent add the below script content at the beginning
 
 <h1>Website Integrations</h1>
 
-Step : Track/Monitor Website
+Step : Track and Monitor Website using Google Analytics
 
 Create a Google Analytics @ https://analytics.google.com/ 
     
