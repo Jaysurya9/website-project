@@ -283,7 +283,7 @@ Login to Google Search Console and Add Website to domain or url.
 
 <hr>
 
-Step : Adding Sitemap 
+Step : Integrate Sitemap 
      
 Blogger XML Sitemaps - Easily generate XML sitemaps for your Blogger (blogspot) blogs for better SEO<br>
 Generate Sitemap online @ <a href="https://www.labnol.org/blogger/sitemap/" alt="generate XML sitemaps for your Blogger (blogspot) blogs for better SEO" target="_blank">Click Here</a>
@@ -292,6 +292,15 @@ Generate Sitemap online @ <a href="https://www.labnol.org/blogger/sitemap/" alt=
 reference link: <a href="https://www.labnol.org/internet/submit-blogger-sitemap-to-google/10149/" target="_blank">How to Add an XML Sitemap to your Blogger Blog</a>
 
 Enable Custom Robot and add sitemap code to Custom Robot in Blogger settings.
+    
+<hr>
+    
+Step: Integrate Programmable Search Engine on website   
+      https://programmablesearchengine.google.com/  
+    
+Add a customizable search box to your web pages and show fast, relevant results.
+    
+<hr>
 
 Step : Website Automation @ https://ifttt.com/
 
