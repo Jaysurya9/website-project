@@ -34,6 +34,5 @@
 
             <link rel="shortcut icon" href="add website favicon.png" type="image/x-icon">
             <link rel="icon" href="add website favicon.png" type="image/x-icon">
-    
         <!-- End Of SEO -->
     </head>
