@@ -246,17 +246,17 @@ Enable post html concent add the below script content at the beginning
 
 <hr>
 
-<h1>Website Integrations</h1>
+# Website Integrations<
 
 Step : Track and Monitor Website using Google Analytics
     
-# Analyze performance 
+<b>Analyze performance</b>
 Gather and analyze data to gain insights on Website/business performance and find areas to improve.   
     
-# Get to know your customers with Google Analytics
+<b>Get to know your customers with Google Analytics</b>
 Connect Webiste/Blog/Store with Google Analytics to get a deeper understanding of who your customers are, where they come from, and how they interact with your Webiste/Blog/Store
     .
-# Set Up Google Analytics - Get more detailed insights and reports
+<b>Set Up Google Analytics - Get more detailed insights and reports</b>
 Learn the number of site visitors, how well they convert to customers, and other important metrics to get a detailed overview of your business performance.
     
 Get Started <br>
