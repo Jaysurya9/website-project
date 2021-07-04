@@ -249,13 +249,23 @@ Enable post html concent add the below script content at the beginning
 <h1>Website Integrations</h1>
 
 Step : Track and Monitor Website using Google Analytics
-
+    
+# Analyze performance 
+Gather and analyze data to gain insights on Website/business performance and find areas to improve.   
+    
+# Get to know your customers with Google Analytics
+Connect Webiste/Blog/Store with Google Analytics to get a deeper understanding of who your customers are, where they come from, and how they interact with your Webiste/Blog/Store
+    .
+# Set Up Google Analytics - Get more detailed insights and reports
+Learn the number of site visitors, how well they convert to customers, and other important metrics to get a detailed overview of your business performance.
+    
+Get Started <br>
 Create a Google Analytics @ https://analytics.google.com/ 
     
-Set up the Analytics global site tag
+Set up the Analytics global site tag <br>
 Refer: https://support.google.com/analytics/answer/1008080?hl=en#zippy=%2Cin-this-article
     
-Set up Analytics for a website (Universal Analytics)
+Set up Analytics for a website (Universal Analytics) <br>
 Refer: https://support.google.com/analytics/answer/10269537?ref_topic=1009620
     
 Add Global Site Tag (gtag.js) tracking code
@@ -295,7 +305,7 @@ Enable Custom Robot and add sitemap code to Custom Robot in Blogger settings.
     
 <hr>
     
-Step: Integrate Programmable Search Engine on website   
+<b>Step:</b> Integrate Programmable Search Engine on website   
       https://programmablesearchengine.google.com/  
     
 Add a customizable search box to your web pages and show fast, relevant results.
