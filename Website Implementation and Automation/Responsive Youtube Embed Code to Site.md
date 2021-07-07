@@ -1,12 +1,14 @@
 # Add a Responsive Youtube Embed Code to Site
 
-<b>Responsive Youtube Embed Code:</b><br>
-This a Script for CSS Inline<br>
-Note: Modify src='https://www.youtube.com/embed/<add watch value here>' with actual youtube url. For Example: src='https://www.youtube.com/embed/QKZXPYmD3hM'
+<b>Responsive Youtube Embed Code:</b>
+
+This a Script for CSS Inline
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%">
       <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" src='https://www.youtube.com/embed/<add watch value here>' frameborder='0' allowfullscreen></iframe>
     </div>
+    
+<b>Note:</b> Modify src='https://www.youtube.com/embed/<add watch value here>' with actual youtube url. For Example: src='https://www.youtube.com/embed/QKZXPYmD3hM'
   
 <h3>Alternatives for adding CSS</h3>
 
