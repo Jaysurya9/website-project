@@ -18,11 +18,11 @@ Search Console tools and reports help you measure your site's Search traffic and
 <img src="Images/Search Console Property Type.PNG" alt="Search Console Property Type">
 
 For Domain Setup:
-<img src="Images/Search Console Property Type - Domain Setup.PNG" alt="Search Console Property Type - Domain Setup">
+<img src="Search Console Property Type - Domain Setup.png" alt="Search Console Property Type - Domain Setup">
 Click <b>Continue</b>
 
 For URL Prefix Setup: 
-<img src="Images/Search Console Property Type - URL Prefix Setup.PNG" alt="Search Console Property Type - URL Prefix Setup">
+<img src="Images/Search Console Property Type - URL Prefix Setup.png" alt="Search Console Property Type - URL Prefix Setup">
 Click <b>Continue</b>
 
 <h2>Add Search Console Sitemap</h2>
