@@ -14,17 +14,19 @@ Search Console tools and reports help you measure your site's Search traffic and
 <li><b>Understand how Google Search sees your pages: </b>The URL Inspection tool provides detailed crawl, index and serving information about your pages, directly from the Google index.</li>
 </ul>
 
-<h2>Add Search Console Property Type</h2>
+<h3>Add Search Console Property Type</h3>
+
 <img src="Images/Search Console Property Type.PNG" alt="Search Console Property Type">
 
-For Domain Setup:
+<b>For Domain Setup:</b>
+
 <img src="Images/Search Console Property Type - Domain Setup.png" alt="Search Console Property Type - Domain Setup">
 
 Click <b>Continue</b>
 
 <img src="Images/Search Console Property Types Verification.png" alt="Search Console Property Types Verification">
 
-For URL Prefix Setup: 
+<b>For URL Prefix Setup:</b>
 
 <img src="Images/Search Console Property Type - URL Prefix Setup.png" alt="Search Console Property Type - URL Prefix Setup">
 
@@ -32,17 +34,17 @@ Click <b>Continue</b>
 
 <img src="Images/Search Console Property Type Verification.png" alt="Search Console Property Type Verification">
 
+<b>Verify Property:</b>
+
 <img src="Images/Added Search Console Property Types.png" alt="Added Search Console Property Types">
 
-<h2>Add Search Console Sitemap</h2>
+<h3>Add Search Console Sitemap</h3>
 
-<h3>Navigate to Sitemap and Add Sitemap.xml</h3>
+<b>Navigate to Sitemap and Add Sitemap.xml</b>
 
     https://cloudtechin.blogspot.com/sitemap.xml
 
 <img src="Images/Add Sitemap.png" alt="Add Sitemap">
-
-Click <b>Continue</b>
 
 <h3>For Atom/RSS</h3>
 
