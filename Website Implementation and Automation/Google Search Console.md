@@ -38,9 +38,9 @@ Click <b>Continue</b>
 
 <img src="Images/Added Search Console Property Types.png" alt="Added Search Console Property Types">
 
-<h3>Add Search Console Sitemap</h3>
+<h3>Add Sitemap in Search Console</h3>
 
-<b>Navigate to Sitemap and Add Sitemap.xml</b>
+<b>Navigate to Sitemap in Search Console and Add Sitemap.xml</b>
 
     https://cloudtechin.blogspot.com/sitemap.xml
 
