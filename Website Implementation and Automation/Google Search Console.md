@@ -19,23 +19,32 @@ Search Console tools and reports help you measure your site's Search traffic and
 
 For Domain Setup:
 <img src="Images/Search Console Property Type - Domain Setup.png" alt="Search Console Property Type - Domain Setup">
+
 Click <b>Continue</b>
 
+<img src="Images/Search Console Property Types Verification.png" alt="Search Console Property Types Verification">
+
 For URL Prefix Setup: 
+
 <img src="Images/Search Console Property Type - URL Prefix Setup.png" alt="Search Console Property Type - URL Prefix Setup">
+
 Click <b>Continue</b>
+
+<img src="Images/Search Console Property Type Verification.png" alt="Search Console Property Type Verification">
+
+<img src="Images/Added Search Console Property Types.png" alt="Added Search Console Property Types">
 
 <h2>Add Search Console Sitemap</h2>
 
-Navigate to Sitemap and Add Sitemap
+<h3>Navigate to Sitemap and Add Sitemap.xml</h3>
 
     https://cloudtechin.blogspot.com/sitemap.xml
 
-<img src="Images/Search Console Property Type - URL Prefix Setup -Sitemap.png" alt="Search Console Property Type - URL Prefix Setup">
+<img src="Images/Add Sitemap.png" alt="Add Sitemap">
+
 Click <b>Continue</b>
 
-
-For Atom
+<h3>For Atom/RSS</h3>
 
     https://cloudtechin.blogspot.com/atom.xml?redirect=false&start-index=1&max-results=500
 
