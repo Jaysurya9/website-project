@@ -6,5 +6,5 @@ Copy this url : <b>data:text/html, <html contenteditable></b>
 
 open chrome and paste the copied URL and Hit enter, then it will return into a notepad in Editable format
   
-<img src="Images/Make Chrome a Text Editor.png" alt="Make Chrome a Text Editor"
+<img src="Images/Make Chrome a Text Editor.png" alt="Make Chrome a Text Editor">
 
