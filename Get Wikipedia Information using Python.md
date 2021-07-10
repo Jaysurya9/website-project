@@ -2,6 +2,6 @@
 
 Pip Install wikipedia
 
-     import wikipedia
+    import wikipedia
     result = wikipedia.summary("Abdul Kalam")
     print(result)
