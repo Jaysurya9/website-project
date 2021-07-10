@@ -1,6 +1,6 @@
 # Make Chrome a Text Editor
 
-Copy this url : <b>data:text/html, <html contenteditable></b>
+Copy this url : 
 
     data:text/html, <html contenteditable>
 
