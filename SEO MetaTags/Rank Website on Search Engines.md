@@ -17,9 +17,8 @@ Add a description of site to get visible on Google search.
 <h1>Viewport</h1>
 Using Viewport meta tag in script can control layout on mobile browsers
 
-  <head>
     <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/>
-  <head>
+  
   
 <h1>Canonical Tag</h1>  
 This tag tells sreach engines which version of URL site wants to appear in search results.
